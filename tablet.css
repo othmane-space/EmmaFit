@@ -299,7 +299,10 @@ margin-top: -20%;
  }
  }
  @media (max-width:600px){
-
+ *{
+  --padding-lr:0 2rem;
+  --margin-btwn-sections:3rem;
+ }
   .contact-form{
    width: 100%;
   }
