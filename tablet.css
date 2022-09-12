@@ -322,7 +322,7 @@ margin-top: -20%;
  }
  @media (max-width:500px) {
   *{
-    --padding-lr:0 .5rem;
+    --padding-lr:0 1rem;
     --padding-btn:0rem .75rem;
     --subheadline:1.25rem;
    }
