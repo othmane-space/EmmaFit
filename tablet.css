@@ -15,10 +15,10 @@
  top: 0;
  bottom: 0;
  background-color: white;
- width: 300px;
+ width: 280px;
  display: flex;
  flex-direction: column;
- padding: 69px;
+ padding: 69px 30px 69px 69px;
  transition: .5s;
  right: -100%;
  z-index: 30;
@@ -322,7 +322,7 @@ margin-top: -20%;
  }
  @media (max-width:500px) {
   *{
-    --padding-lr:0 1rem;
+    --padding-lr:0 .5rem;
     --padding-btn:0rem .75rem;
     --subheadline:1.25rem;
    }
@@ -338,5 +338,9 @@ margin-top: -20%;
    .left,.right{
     width: 30px;
     z-index: 4;
+   }
+   .contact-form{
+    width: 100%;
+    padding: 3rem 1rem;
    }
  }
