@@ -15,7 +15,7 @@
  top: 0;
  bottom: 0;
  background-color: white;
- width: 350px;
+ width: 250px;
  display: flex;
  flex-direction: column;
  padding: 69px;
@@ -299,7 +299,13 @@ margin-top: -20%;
  }
  }
  @media (max-width:600px){
-
+   *{
+  --padding-lr:0 2rem;
+  --margin-btwn-sections:5rem;
+ }
+  .btn{
+   font-size:1rem;
+  }
   .contact-form{
    width: 100%;
   }
@@ -314,7 +320,7 @@ margin-top: -20%;
  background-position-y:0px ;
    }
    .carda{
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
    }
    .small{
     display: none;
