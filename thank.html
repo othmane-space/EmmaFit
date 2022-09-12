@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>EmmaFit</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="/desktop.css">
+ <style>
+  body{
+   background-size: cover;
+   background-position: center;
+   background-image:url(/Ressources/tank.jpg);
+   background-repeat: no-repeat;
+   
+  }
+  body::before{
+   content: '';
+   position: absolute;
+   background-image: linear-gradient(to left,transparent, black);
+   width: 100%;
+   height: 100%;
+   top: 0;
+   z-index: -1;
+   
+  }
+  h3{
+   font-weight: 500;
+   color: var(--regular-txt-color);
+  }
+ h1{
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+ }
+ button{
+  margin-top: 1.25rem;
+ }
+ .container{
+  display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   row-gap: 1rem;
+   text-align: center;
+   width: 100%;
+  padding: 2rem;
+  background-image:linear-gradient(to left,transparent,var(--primary-color)) ;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h1>Thank You For Your Trust.</h1>
+ <a href="index.html"><button class="btn sec-btn">Go Home</button></a>
+</div>
+</body>
+</html>

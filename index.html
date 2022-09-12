@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>EmmaFit</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="/desktop.css">
+ <link rel="stylesheet" href="/tablet.css">
+</head>
+<body>
+  <input class="inh" type="radio" name="r" id="open">
+  <input class="inh" type="radio" name="r" id="close"> 
+  <div class="orange-bg"></div>
+<header>
+ <svg class="logo" viewBox="0 0 184 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M135.6 30.44L134.84 41.4C134.813 41.6133 134.787 41.7733 134.76 41.88C134.76 41.96 134.64 42 134.4 42H132.2C130.707 42 129.64 41.7067 129 41.12C128.36 40.5333 128.04 39.6933 128.04 38.6C128.04 38.0667 128.08 37.16 128.16 35.88C128.24 34.5733 128.347 33.0933 128.48 31.44C128.613 29.7867 128.747 28.04 128.88 26.2C129.013 24.36 129.147 22.6267 129.28 21C129.413 19.3733 129.52 17.9467 129.6 16.72C129.68 15.4933 129.72 14.6533 129.72 14.2C129.72 13.8 129.933 13.6 130.36 13.6H144.44C144.6 13.6 144.747 13.64 144.88 13.72C145.013 13.8 145.08 13.9467 145.08 14.16L144.92 16.52C144.867 17.32 144.64 17.9733 144.24 18.48C143.867 18.96 143.08 19.2 141.88 19.2H136.36L135.96 24.84H141.64C141.8 24.84 141.947 24.88 142.08 24.96C142.213 25.04 142.28 25.1867 142.28 25.4L142.12 27.76C142.067 28.56 141.84 29.2133 141.44 29.72C141.067 30.2 140.28 30.44 139.08 30.44H135.6ZM150.755 42C149.261 42 148.195 41.7067 147.555 41.12C146.915 40.5333 146.595 39.6933 146.595 38.6C146.595 38.0667 146.635 37.16 146.715 35.88C146.795 34.5733 146.901 33.0933 147.035 31.44C147.168 29.7867 147.301 28.04 147.435 26.2C147.568 24.36 147.701 22.6267 147.835 21C147.968 19.3733 148.075 17.9467 148.155 16.72C148.235 15.4933 148.275 14.6533 148.275 14.2C148.275 13.8 148.488 13.6 148.915 13.6H151.115C152.741 13.6 153.835 13.9467 154.395 14.64C154.955 15.3333 155.235 16.36 155.235 17.72C155.235 17.8533 155.208 18.28 155.155 19C155.128 19.72 155.075 20.6267 154.995 21.72C154.915 22.8133 154.821 24.04 154.715 25.4C154.635 26.7333 154.541 28.1067 154.435 29.52C154.355 30.9333 154.261 32.32 154.155 33.68C154.075 35.0133 153.995 36.2267 153.915 37.32C153.835 38.4133 153.768 39.3333 153.715 40.08C153.661 40.8 153.621 41.24 153.595 41.4C153.568 41.6133 153.515 41.7733 153.435 41.88C153.355 41.96 153.195 42 152.955 42H150.755ZM172.133 19.2L170.613 41.4C170.586 41.8 170.44 42 170.173 42H167.973C166.48 42 165.413 41.7067 164.773 41.12C164.133 40.5333 163.813 39.6933 163.813 38.6C163.813 38.2 163.826 37.6 163.853 36.8C163.906 36 163.973 35.0667 164.053 34C164.133 32.9067 164.213 31.7333 164.293 30.48C164.4 29.2 164.506 27.92 164.613 26.64C164.72 25.3333 164.813 24.04 164.893 22.76C165 21.48 165.093 20.2933 165.173 19.2H158.773C158.48 19.2 158.333 19.0133 158.333 18.64L158.453 16.4C158.48 16.0533 158.533 15.72 158.613 15.4C158.72 15.0533 158.88 14.7467 159.093 14.48C159.306 14.2133 159.573 14 159.893 13.84C160.24 13.68 160.653 13.6 161.133 13.6H179.013C179.173 13.6 179.32 13.64 179.453 13.72C179.586 13.8 179.653 13.9467 179.653 14.16L179.493 16.52C179.44 17.32 179.213 17.9733 178.813 18.48C178.44 18.96 177.653 19.2 176.453 19.2H172.133Z" fill="#E39300"/>
+  <path d="M19.942 19.77V26.42H28.872V30.638H19.942V37.668H30.012V42H14.622V15.438H30.012V19.77H19.942ZM63.7646 15.476V42H58.4446V24.748L51.3386 42H47.3106L40.1666 24.748V42H34.8466V15.476H40.8886L49.3246 35.198L57.7606 15.476H63.7646ZM97.9423 15.476V42H92.6223V24.748L85.5163 42H81.4883L74.3443 24.748V42H69.0243V15.476H75.0663L83.5023 35.198L91.9383 15.476H97.9423ZM119.466 36.946H108.902L107.154 42H101.568L111.106 15.438H117.3L126.838 42H121.214L119.466 36.946ZM118.022 32.69L114.184 21.594L110.346 32.69H118.022Z" fill="#5B5240"/>
+  <path d="M182.987 29.8088C128.087 47.3743 14.8771 71.6042 1.23883 28" stroke="#ED9B04" stroke-width="2"/>
+  </svg>
+
+  
+  <nav>
+  <ul class="ul-header">
+   <li><a href="#services">SERVICES</a></li>
+   <li><a href="#about-me">ABOUT ME</a></li>
+   <li><a href="#client-progress">CLIENTS PROGRESS</a></li>
+   <li><a href="#testemonials">TESTEMONIALS</a></li>
+  </ul>
+ </nav>
+ 
+
+<div class="btn-men">
+<a href="#contact"><button class="btn pri-btn small">CONTACT ME</button></a>
+
+  <label class="menu-lb" for="open"><svg class="menu" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M49.875 42.75H7.125V38H49.875V42.75ZM49.875 30.875H7.125V26.125H49.875V30.875ZM49.875 19H28.5V14.25H49.875V19Z" fill="black"/>
+</svg>
+</label>
+</div>
+</header>
+
+<div class="aside-menu">
+ <label class="close-lb" for="close"><svg class="close" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15 27.4999C13.358 27.5015 11.7318 27.1793 10.2145 26.5517C8.69721 25.9241 7.31856 25.0034 6.1575 23.8424C4.99644 22.6813 4.07576 21.3027 3.44816 19.7854C2.82056 18.2681 2.49836 16.6419 2.50001 14.9999V14.7499C2.55002 12.2991 3.31912 9.91714 4.71174 7.89991C6.10436 5.88268 8.05907 4.31917 10.333 3.4037C12.6068 2.48824 15.0996 2.26119 17.5015 2.75076C19.9033 3.24033 22.1084 4.42495 23.8425 6.15738C25.5921 7.90557 26.7838 10.1335 27.2668 12.5592C27.7497 14.985 27.5021 17.4994 26.5554 19.7844C25.6087 22.0694 24.0054 24.0222 21.9485 25.3956C19.8915 26.769 17.4733 27.5013 15 27.4999ZM15 16.7624L18.2375 19.9999L20 18.2374L16.7625 14.9999L20 11.7624L18.2375 9.99988L15 13.2374L11.7625 9.99988L10 11.7624L13.2375 14.9999L10 18.2374L11.7625 19.9999L15 16.7636V16.7624Z" fill="#ED9B04"/>
+  </svg>
+  </label>
+
+  <nav>
+   <ul class="ul-aside">
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="#about-me">ABOUT ME</a></li>
+    <li><a href="#client-progress">CLIENTS PROGRESS</a></li>
+    <li><a href="#testemonials">TESTEMONIALS</a></li>
+    <li><a href="#contact">CONTACT ME</a></li>
+   </ul>
+  </nav>
+</div>
+
+<hero>
+<div class="hero-content">
+  <div class="hero-fixed">
+    <span class="sec-headline" >I'm</span>
+    <span class="pri-headline">EMMA WEST</span>
+    <span class="sec-headline">You can call me Emmy.</span>
+  </div>
+
+  <div class="hero-absolute">
+    <p class="subheadline">I am a professional trainer with +3 Years of experience, my job is to help you get the body shape of your dreams.</p>
+
+    <div class="call-to-action">
+      <a href="#contact"><button class="btn sec-btn">LET'S TALK</button></a>
+      <a href="#features"><button class="btn pri-btn">WHY CHOSE ME?</button></a>
+    </div>
+  </div>
+</div>
+  <img class="hero-image" src="/Ressources/hero-image.png" alt="hero-image">
+  <div class="hero-absolute-bottom">
+    <p class="subheadline">I am a professional trainer with +3 Years of experience, my job is to help you get the body shape of your dreams.</p>
+
+    <div class="call-to-action">
+      <a href="#"><button class="btn sec-btn">LET'S TALK</button></a>
+      <a href="#features"><button class="btn pri-btn">WHY CHOSE ME?</button></a>
+    </div>
+  </div>
+</div>
+</hero>
+
+
+<div class="top">
+  <a href="#contact">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C30.125 1.66675 38.3333 9.87508 38.3333 20.0001C38.3333 30.1251 30.125 38.3334 20 38.3334C9.87498 38.3334 1.66665 30.1251 1.66665 20.0001C1.66665 9.87508 9.87498 1.66675 20 1.66675ZM16.3216 14.5117C16.018 14.1974 15.8501 13.7764 15.8539 13.3394C15.8577 12.9024 16.0329 12.4844 16.3419 12.1754C16.651 11.8664 17.069 11.6911 17.506 11.6873C17.943 11.6835 18.364 11.8515 18.6783 12.1551L25.345 18.8217C25.6574 19.1343 25.833 19.5581 25.833 20.0001C25.833 20.442 25.6574 20.8659 25.345 21.1784L18.6783 27.8451C18.364 28.1487 17.943 28.3167 17.506 28.3129C17.069 28.3091 16.651 28.1338 16.3419 27.8248C16.0329 27.5158 15.8577 27.0977 15.8539 26.6608C15.8501 26.2238 16.018 25.8028 16.3216 25.4884L21.81 20.0001L16.3216 14.5117Z" fill="#ED9B04"/>
+    </svg></a>
+</div>
+
+<section id="features" class="why-me">
+  <h1>Why Chose ME?</h1>
+  <div class="cards">
+    <div class="flexible-card">
+
+  <div class="card nutiration">
+    <div class="card-content">
+    <h3>Custom Nutration Plan</h3>
+    <p>I will provide you with your very own custom nutrition plan that matches your goals and needs.</p>
+  </div>
+  </div>
+
+</div>
+
+
+<div class="fixed-cards">
+  <div class="card workout">
+    <div class="card-content">
+    <h3>Personalized Workout Program</h3>
+    <p>If there's anything I've learned working with +99 clients is that every body needs its own personalized exercise program in order to get it looking the way we want it to.</p>
+  </div>
+  </div>
+
+  <div class="card fun">
+    <div class="card-content">
+    <h3>Fun & Freindly</h3>
+    <p>It doesn't matter if your fitness level is low or your progress is slow, my priority is to make each session with you as Unique and Enjoyable as possible.</p>
+  </div>
+  </div>
+</div>
+
+</div>
+</section>
+
+<section id="services" class="services">
+  <h1>Services</h1>
+
+<div class="cardas">
+  <div class="carda online-coaching">
+    <h3>ONLINE COACHING</h3>
+    <div class="line">
+      <svg  width="460" height="2" viewBox="0 0 460 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 1H459.5" stroke="url(#paint0_linear_73_216)"/>
+        <defs>
+        <linearGradient id="paint0_linear_73_216" x1="-4.22976e-06" y1="1" x2="465.5" y2="0.999029" gradientUnits="userSpaceOnUse">
+        <stop/>
+        <stop offset="0.541667" stop-opacity="0"/>
+        <stop offset="1"/>
+        </linearGradient>
+        </defs>
+        </svg> 
+    </div>
+      <div class="recomend">
+        <span><strong>Recommended For:</strong></span>
+        <p>those who live outside the US and don't have enough time.</p>
+      </div>
+      <div class="pack">
+        <span class="pack-word"><strong>This Pack Include:</strong></span>
+        <div class="includes">
+          <div class="include">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+              </svg>
+              <p>Custom Nutiration Plan.</p>
+          </div>
+          <div class="include">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+              </svg>
+              <p>Custom Workout Plan.</p>
+          </div>
+          <div class="include">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+              </svg>
+              <p>3 online Sessions Per week.</p>
+          </div>
+          <div class="include">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+              </svg>
+              <p>Free Consultation 24/7.</p>
+          </div>
+          <div class="include unchecked">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+              </svg>
+              <p>4 face to face sessions per week.</p>
+          </div>
+          <div class="include unchecked">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+              </svg>
+              <p>FREE Private Gym access 24/7.</p>
+          </div>
+          <div class="include unchecked">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+              </svg>
+              <p>Single Yoga session per week.</p>
+          </div>
+        </div>
+        </div>
+    
+       
+
+        <div class="line">
+          <svg  width="460" height="2" viewBox="0 0 460 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 1H459.5" stroke="url(#paint0_linear_73_216)"/>
+            <defs>
+            <linearGradient id="paint0_linear_73_216" x1="-4.22976e-06" y1="1" x2="465.5" y2="0.999029" gradientUnits="userSpaceOnUse">
+            <stop/>
+            <stop offset="0.541667" stop-opacity="0"/>
+            <stop offset="1"/>
+            </linearGradient>
+            </defs>
+            </svg> 
+        </div>
+
+        <div class="action">
+          <div class="price">
+            <span><strong>Price:</strong></span>
+            <h3>$200/month.</h3>
+          </div>
+         <a href="#contact"><button class="btn join">Join Now</button></a>
+        </div>
+</div>
+
+<div class="carda ">
+  <h3>ON TO ONE COACHING</h3>
+
+  <div class="line">
+    <svg  width="460" height="2" viewBox="0 0 460 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.5 1H459.5" stroke="url(#paint0_linear_73_216)"/>
+      <defs>
+      <linearGradient id="paint0_linear_73_216" x1="-4.22976e-06" y1="1" x2="465.5" y2="0.999029" gradientUnits="userSpaceOnUse">
+      <stop/>
+      <stop offset="0.541667" stop-opacity="0"/>
+      <stop offset="1"/>
+      </linearGradient>
+      </defs>
+      </svg> 
+  </div>
+    
+    <div class="recomend">
+      <span><strong>Recommended For:</strong></span>
+      <p>those who live in the US and who have some spare time.</p>
+    </div>
+
+    <div class="pack">
+      <span class="pack-word"><strong>This Pack Include:</strong></span>
+      <div class="includes">
+        <div class="include">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+            </svg>
+            <p>Custom Nutiration Plan.</p>
+        </div>
+        <div class="include">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+            </svg>
+            <p>Custom Workout Plan.</p>
+        </div>
+        <div class="include">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+            </svg>
+            <p>4 Face To Face Sessions Per Week.</p>
+        </div>
+ 
+        <div class="include">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+            </svg>
+            <p>FREE Private Gym access 24/7.</p>
+        </div>
+        <div class="include">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+            </svg>
+            <p>Free Consultation 24/7.</p>
+        </div>
+        <div class="include">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 12.75L3.75 9L4.8075 7.935L7.5 10.6275L13.1925 4.935L14.25 6M9 1.5C8.01509 1.5 7.03982 1.69399 6.12987 2.0709C5.21993 2.44781 4.39314 3.00026 3.6967 3.6967C2.29018 5.10322 1.5 7.01088 1.5 9C1.5 10.9891 2.29018 12.8968 3.6967 14.3033C4.39314 14.9997 5.21993 15.5522 6.12987 15.9291C7.03982 16.306 8.01509 16.5 9 16.5C10.9891 16.5 12.8968 15.7098 14.3033 14.3033C15.7098 12.8968 16.5 10.9891 16.5 9C16.5 8.01509 16.306 7.03982 15.9291 6.12987C15.5522 5.21993 14.9997 4.39314 14.3033 3.6967C13.6069 3.00026 12.7801 2.44781 11.8701 2.0709C10.9602 1.69399 9.98491 1.5 9 1.5Z" fill="white"/>
+            </svg>
+            <p>Single Yoga Session Per Week.</p>
+        </div>
+      </div>
+      </div>
+     
+      <div class="line">
+        <svg  width="460" height="2" viewBox="0 0 460 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.5 1H459.5" stroke="url(#paint0_linear_73_216)"/>
+          <defs>
+          <linearGradient id="paint0_linear_73_216" x1="-4.22976e-06" y1="1" x2="465.5" y2="0.999029" gradientUnits="userSpaceOnUse">
+          <stop/>
+          <stop offset="0.541667" stop-opacity="0"/>
+          <stop offset="1"/>
+          </linearGradient>
+          </defs>
+          </svg> 
+      </div>
+
+      <div class="action">
+        <div class="price">
+          <span><strong>Price:</strong></span>
+          <h3>$300/month.</h3>
+        </div>
+       <a href="#contact"><button class="btn join">Join Now</button></a>
+      </div>
+</div>
+</div>
+</section>
+
+<section id="about-me" class="about-me">
+  <h1>About Me</h1>
+  <div class="about">
+  <div class="about-pic">
+ 
+  </div>
+  <div class="about-content">
+    <h3>Hi I’m Emma West.</h3>
+    <p>I am a fully certified personal trainer and fitness nutrition specialist. I have been training clients for nearly 4 years and during that time I have refined my fitness strategy to provide the best results, but more importantly, to do so while having fun! I know that if you enjoy your workouts you are much more likely to stick with them, and my program is all about building amazing habits for how you workout and eat.</p>
+    <p>Regular exercise isn’t just great for your body, it’s also going to help you feel happier, more optimistic and give you more energy. My favorite thing about what I do is seeing how people transform both mentally and physically when they incorporate exercise into their lifestyle. I focus on creating a program which will never grow boring, so that it is easy for you to make my workouts part of your daily routine. I want to offer you a program that you can stick with for life!</p>
+    <a href="#contact"><button class="btn pri-btn about-btn">Let's Do It</button></a>
+  </div>
+</div>
+</section>
+
+<section class="client-progress" id="client-progress">
+  <h1>Clients Progress</h1>
+
+
+  <div class="all-slider-container">
+
+    <input type="radio" name="a" id="left1">
+    <input type="radio" name="a" id="left2">
+    <input type="radio" name="a" id="left3">
+    <input type="radio" name="a" id="left4">
+    <input type="radio" name="a" id="right1">
+    <input type="radio" name="a" id="right2">
+    <input type="radio" name="a" id="right3">
+    <input type="radio" name="a" id="right4">
+
+<label class="left left1" for="left1">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C9.87502 1.66675 1.66669 9.87508 1.66669 20.0001C1.66669 30.1251 9.87502 38.3334 20 38.3334C30.125 38.3334 38.3334 30.1251 38.3334 20.0001C38.3334 9.87508 30.125 1.66675 20 1.66675ZM23.6784 14.5117C23.982 14.1974 24.1499 13.7764 24.1461 13.3394C24.1423 12.9024 23.9671 12.4844 23.6581 12.1754C23.349 11.8664 22.931 11.6911 22.494 11.6873C22.057 11.6835 21.636 11.8515 21.3217 12.1551L14.655 18.8217C14.3426 19.1343 14.167 19.5581 14.167 20.0001C14.167 20.442 14.3426 20.8659 14.655 21.1784L21.3217 27.8451C21.636 28.1487 22.057 28.3167 22.494 28.3129C22.931 28.3091 23.349 28.1338 23.6581 27.8248C23.9671 27.5158 24.1423 27.0977 24.1461 26.6608C24.1499 26.2238 23.982 25.8028 23.6784 25.4884L18.19 20.0001L23.6784 14.5117Z" fill="#ED9B04"/>
+    </svg>
+</label>
+
+<label class="left left2" for="left2">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C9.87502 1.66675 1.66669 9.87508 1.66669 20.0001C1.66669 30.1251 9.87502 38.3334 20 38.3334C30.125 38.3334 38.3334 30.1251 38.3334 20.0001C38.3334 9.87508 30.125 1.66675 20 1.66675ZM23.6784 14.5117C23.982 14.1974 24.1499 13.7764 24.1461 13.3394C24.1423 12.9024 23.9671 12.4844 23.6581 12.1754C23.349 11.8664 22.931 11.6911 22.494 11.6873C22.057 11.6835 21.636 11.8515 21.3217 12.1551L14.655 18.8217C14.3426 19.1343 14.167 19.5581 14.167 20.0001C14.167 20.442 14.3426 20.8659 14.655 21.1784L21.3217 27.8451C21.636 28.1487 22.057 28.3167 22.494 28.3129C22.931 28.3091 23.349 28.1338 23.6581 27.8248C23.9671 27.5158 24.1423 27.0977 24.1461 26.6608C24.1499 26.2238 23.982 25.8028 23.6784 25.4884L18.19 20.0001L23.6784 14.5117Z" fill="#ED9B04"/>
+    </svg>
+</label>
+
+<label class="left left3" for="left3">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C9.87502 1.66675 1.66669 9.87508 1.66669 20.0001C1.66669 30.1251 9.87502 38.3334 20 38.3334C30.125 38.3334 38.3334 30.1251 38.3334 20.0001C38.3334 9.87508 30.125 1.66675 20 1.66675ZM23.6784 14.5117C23.982 14.1974 24.1499 13.7764 24.1461 13.3394C24.1423 12.9024 23.9671 12.4844 23.6581 12.1754C23.349 11.8664 22.931 11.6911 22.494 11.6873C22.057 11.6835 21.636 11.8515 21.3217 12.1551L14.655 18.8217C14.3426 19.1343 14.167 19.5581 14.167 20.0001C14.167 20.442 14.3426 20.8659 14.655 21.1784L21.3217 27.8451C21.636 28.1487 22.057 28.3167 22.494 28.3129C22.931 28.3091 23.349 28.1338 23.6581 27.8248C23.9671 27.5158 24.1423 27.0977 24.1461 26.6608C24.1499 26.2238 23.982 25.8028 23.6784 25.4884L18.19 20.0001L23.6784 14.5117Z" fill="#ED9B04"/>
+    </svg>
+</label>
+
+<label class="left left4" for="left4">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C9.87502 1.66675 1.66669 9.87508 1.66669 20.0001C1.66669 30.1251 9.87502 38.3334 20 38.3334C30.125 38.3334 38.3334 30.1251 38.3334 20.0001C38.3334 9.87508 30.125 1.66675 20 1.66675ZM23.6784 14.5117C23.982 14.1974 24.1499 13.7764 24.1461 13.3394C24.1423 12.9024 23.9671 12.4844 23.6581 12.1754C23.349 11.8664 22.931 11.6911 22.494 11.6873C22.057 11.6835 21.636 11.8515 21.3217 12.1551L14.655 18.8217C14.3426 19.1343 14.167 19.5581 14.167 20.0001C14.167 20.442 14.3426 20.8659 14.655 21.1784L21.3217 27.8451C21.636 28.1487 22.057 28.3167 22.494 28.3129C22.931 28.3091 23.349 28.1338 23.6581 27.8248C23.9671 27.5158 24.1423 27.0977 24.1461 26.6608C24.1499 26.2238 23.982 25.8028 23.6784 25.4884L18.19 20.0001L23.6784 14.5117Z" fill="#ED9B04"/>
+    </svg>
+</label>
+
+<label class="right right1" for="right1">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C30.125 1.66675 38.3333 9.87508 38.3333 20.0001C38.3333 30.1251 30.125 38.3334 20 38.3334C9.87498 38.3334 1.66665 30.1251 1.66665 20.0001C1.66665 9.87508 9.87498 1.66675 20 1.66675ZM16.3216 14.5117C16.018 14.1974 15.8501 13.7764 15.8539 13.3394C15.8577 12.9024 16.0329 12.4844 16.3419 12.1754C16.651 11.8664 17.069 11.6911 17.506 11.6873C17.943 11.6835 18.364 11.8515 18.6783 12.1551L25.345 18.8217C25.6574 19.1343 25.833 19.5581 25.833 20.0001C25.833 20.442 25.6574 20.8659 25.345 21.1784L18.6783 27.8451C18.364 28.1487 17.943 28.3167 17.506 28.3129C17.069 28.3091 16.651 28.1338 16.3419 27.8248C16.0329 27.5158 15.8577 27.0977 15.8539 26.6608C15.8501 26.2238 16.018 25.8028 16.3216 25.4884L21.81 20.0001L16.3216 14.5117Z" fill="#ED9B04"/>
+    </svg>
+</label>
+
+<label class="right right2" for="right2">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C30.125 1.66675 38.3333 9.87508 38.3333 20.0001C38.3333 30.1251 30.125 38.3334 20 38.3334C9.87498 38.3334 1.66665 30.1251 1.66665 20.0001C1.66665 9.87508 9.87498 1.66675 20 1.66675ZM16.3216 14.5117C16.018 14.1974 15.8501 13.7764 15.8539 13.3394C15.8577 12.9024 16.0329 12.4844 16.3419 12.1754C16.651 11.8664 17.069 11.6911 17.506 11.6873C17.943 11.6835 18.364 11.8515 18.6783 12.1551L25.345 18.8217C25.6574 19.1343 25.833 19.5581 25.833 20.0001C25.833 20.442 25.6574 20.8659 25.345 21.1784L18.6783 27.8451C18.364 28.1487 17.943 28.3167 17.506 28.3129C17.069 28.3091 16.651 28.1338 16.3419 27.8248C16.0329 27.5158 15.8577 27.0977 15.8539 26.6608C15.8501 26.2238 16.018 25.8028 16.3216 25.4884L21.81 20.0001L16.3216 14.5117Z" fill="#ED9B04"/>
+    </svg>
+</label>
+
+<label class="right right3" for="right3">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C30.125 1.66675 38.3333 9.87508 38.3333 20.0001C38.3333 30.1251 30.125 38.3334 20 38.3334C9.87498 38.3334 1.66665 30.1251 1.66665 20.0001C1.66665 9.87508 9.87498 1.66675 20 1.66675ZM16.3216 14.5117C16.018 14.1974 15.8501 13.7764 15.8539 13.3394C15.8577 12.9024 16.0329 12.4844 16.3419 12.1754C16.651 11.8664 17.069 11.6911 17.506 11.6873C17.943 11.6835 18.364 11.8515 18.6783 12.1551L25.345 18.8217C25.6574 19.1343 25.833 19.5581 25.833 20.0001C25.833 20.442 25.6574 20.8659 25.345 21.1784L18.6783 27.8451C18.364 28.1487 17.943 28.3167 17.506 28.3129C17.069 28.3091 16.651 28.1338 16.3419 27.8248C16.0329 27.5158 15.8577 27.0977 15.8539 26.6608C15.8501 26.2238 16.018 25.8028 16.3216 25.4884L21.81 20.0001L16.3216 14.5117Z" fill="#ED9B04"/>
+    </svg>
+</label>
+
+<label class="right right4" for="right4">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C30.125 1.66675 38.3333 9.87508 38.3333 20.0001C38.3333 30.1251 30.125 38.3334 20 38.3334C9.87498 38.3334 1.66665 30.1251 1.66665 20.0001C1.66665 9.87508 9.87498 1.66675 20 1.66675ZM16.3216 14.5117C16.018 14.1974 15.8501 13.7764 15.8539 13.3394C15.8577 12.9024 16.0329 12.4844 16.3419 12.1754C16.651 11.8664 17.069 11.6911 17.506 11.6873C17.943 11.6835 18.364 11.8515 18.6783 12.1551L25.345 18.8217C25.6574 19.1343 25.833 19.5581 25.833 20.0001C25.833 20.442 25.6574 20.8659 25.345 21.1784L18.6783 27.8451C18.364 28.1487 17.943 28.3167 17.506 28.3129C17.069 28.3091 16.651 28.1338 16.3419 27.8248C16.0329 27.5158 15.8577 27.0977 15.8539 26.6608C15.8501 26.2238 16.018 25.8028 16.3216 25.4884L21.81 20.0001L16.3216 14.5117Z" fill="#ED9B04"/>
+    </svg>
+</label>
+  
+<div class="main-slider-container">
+
+  <div class="slider-content-container">
+
+
+    <div class="containera tacy">
+      <input type="radio" name="b" id="see-more1">
+    <label class="btn sec-btn see-more" for="see-more1">See more</label>
+
+    <span class="client-name">STACEY</span>
+
+   <div class="pictura tacy-picture"></div>
+
+   <div class="contenta tacy-content">
+    <svg width="247" height="209" viewBox="0 0 247 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M167 0.499984V209H132.8V117.8H34.7V209H0.500001V0.499984H34.7V89.9H132.8V0.499984H167ZM246.223 0.499984V209H212.023V0.499984H246.223Z" fill="black" fill-opacity="0.05"/>
+      </svg>     
+    <span class="iname">I'm STACY.</span>
+    <span class="age">I'am 22 Years Old.</span>
+    <span class="achivements">I Lost <strong>5.9 Kg</strong> in <strong>8 Weeks.</strong></span>
+   </div>
+  </div>
+
+
+    <div class="containera rachel">
+      <input type="radio" name="b" id="see-more2">
+      <label class="btn sec-btn see-more" for="see-more2">See more</label>
+    <span class="client-name">RACHAEL</span>
+
+   <div class="pictura rachael-picture"></div>
+
+   <div class="contenta rachael-content">
+    <svg width="247" height="209" viewBox="0 0 247 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M167 0.499984V209H132.8V117.8H34.7V209H0.500001V0.499984H34.7V89.9H132.8V0.499984H167ZM246.223 0.499984V209H212.023V0.499984H246.223Z" fill="black" fill-opacity="0.05"/>
+      </svg>     
+    <span class="iname">I'm RACHAEL.</span>
+    <span class="age">I'am 28 Years Old.</span>
+    <span class="achivements">I Lost <strong>10 Kg</strong> in <strong>14 Weeks.</strong></span>
+   </div>
+  </div>
+
+
+    <div class="containera harrison">
+      <input type="radio" name="b" id="see-more3">
+      <label class="btn sec-btn see-more" for="see-more3">See more</label>
+    <span class="client-name">HARRISON</span>
+
+   <div class="pictura harrison-picture"></div>
+
+   <div class="contenta harrison-content">
+    <svg width="247" height="209" viewBox="0 0 247 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M167 0.499984V209H132.8V117.8H34.7V209H0.500001V0.499984H34.7V89.9H132.8V0.499984H167ZM246.223 0.499984V209H212.023V0.499984H246.223Z" fill="black" fill-opacity="0.05"/>
+      </svg>     
+    <span class="iname">I'm HARRISON.</span>
+    <span class="age">I'am 30 Years Old.</span>
+    <span class="achivements">I Lost <strong>5 Kg</strong> in <strong>7 Weeks.</strong></span>
+   </div>
+  </div>
+
+
+    <div class="containera rony">
+      <input type="radio" name="b" id="see-more4">
+      <label class="btn sec-btn see-more" for="see-more4">See more</label>
+    <span class="client-name">RONY</span>
+
+   <div class="pictura rony-picture"></div>
+
+   <div class="contenta rony-content">
+    <svg width="247" height="209" viewBox="0 0 247 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M167 0.499984V209H132.8V117.8H34.7V209H0.500001V0.499984H34.7V89.9H132.8V0.499984H167ZM246.223 0.499984V209H212.023V0.499984H246.223Z" fill="black" fill-opacity="0.05"/>
+      </svg>     
+    <span class="iname">I'm RONY.</span>
+    <span class="age">I'am 35 Years Old.</span>
+    <span class="achivements">I Lost <strong>9 Kg</strong> in <strong>11 Weeks.</strong></span>
+   </div>
+  </div>
+
+
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="testemonials" id="testemonials">
+  <h1>Testemonials</h1>
+  <div class="testemonial-cards">
+
+    <div class="t-short">
+    <div class="t-card t-card1">
+      <svg class="quotes" width="298" height="332" viewBox="0 0 298 332" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.9844 332C13.9844 332 8.48438 329.5 5.48438 324.5C2.48438 318.5 0.98438 311.5 0.98438 303.5V88.9999C0.98438 63.9999 5.48438 44.9999 14.4844 31.9999C24.4844 18.9999 35.9844 10.4999 48.9844 6.4999C62.9844 2.49995 75.4844 0.499981 86.4844 0.499981C93.4844 0.499981 98.9844 0.999974 102.984 1.99996C106.984 1.99996 110.984 2.49995 114.984 3.49994V45.4999C100.984 45.4999 91.4844 49 86.4844 56C82.4844 62 80.4844 70 80.4844 79.9999V155H92.4844C100.484 155 106.984 157.5 111.984 162.5C116.984 166.5 119.484 173.5 119.484 183.5V303.5C119.484 322.5 110.484 332 92.4844 332H21.9844ZM200.484 332C192.484 332 186.984 329.5 183.984 324.5C180.984 318.5 179.484 311.5 179.484 303.5V88.9999C179.484 63.9999 183.984 44.9999 192.984 31.9999C202.984 18.9999 214.484 10.4999 227.484 6.4999C241.484 2.49995 253.984 0.499981 264.984 0.499981C271.984 0.499981 277.484 0.999974 281.484 1.99996C285.484 1.99996 289.484 2.49995 293.484 3.49994V45.4999C279.484 45.4999 269.984 49 264.984 56C260.984 62 258.984 70 258.984 79.9999V155H270.984C278.984 155 285.484 157.5 290.484 162.5C295.484 166.5 297.984 173.5 297.984 183.5V303.5C297.984 322.5 288.984 332 270.984 332H200.484Z" fill="#ED9B04" fill-opacity="0.05"/>
+        </svg>        
+      
+      <div class="author">
+        <img src="/Ressources/Andrea.svg" alt="andrea picture">
+        <div class="info">
+          <span class="author-name">Andrea Atwell</span>
+          <span class="date">11/02/2022</span>
+        </div>
+      </div>
+
+      <div class="t-line">
+        <svg width="397" height="2" viewBox="0 0 397 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1L397 1.00003" stroke="url(#paint0_linear_73_331)"/>
+          <defs>
+          <linearGradient id="paint0_linear_73_331" x1="22.9205" y1="1" x2="402.19" y2="1.00004" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#ED9B04"/>
+          <stop offset="1" stop-color="#ED9B04" stop-opacity="0"/>
+          </linearGradient>
+          </defs>
+          </svg>     
+      </div>
+
+      <p class="t-text">From the moment I had my first call with Emmy to discuss what working with her would entail, it’s been a phenomenal experience. She was warm, friendly, and made me feel comfortable and confident with the approach. 
+      </p>
+    </div>
+
+
+    <div class="t-card t-card2">
+      <svg class="quotes" width="298" height="332" viewBox="0 0 298 332" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.9844 332C13.9844 332 8.48438 329.5 5.48438 324.5C2.48438 318.5 0.98438 311.5 0.98438 303.5V88.9999C0.98438 63.9999 5.48438 44.9999 14.4844 31.9999C24.4844 18.9999 35.9844 10.4999 48.9844 6.4999C62.9844 2.49995 75.4844 0.499981 86.4844 0.499981C93.4844 0.499981 98.9844 0.999974 102.984 1.99996C106.984 1.99996 110.984 2.49995 114.984 3.49994V45.4999C100.984 45.4999 91.4844 49 86.4844 56C82.4844 62 80.4844 70 80.4844 79.9999V155H92.4844C100.484 155 106.984 157.5 111.984 162.5C116.984 166.5 119.484 173.5 119.484 183.5V303.5C119.484 322.5 110.484 332 92.4844 332H21.9844ZM200.484 332C192.484 332 186.984 329.5 183.984 324.5C180.984 318.5 179.484 311.5 179.484 303.5V88.9999C179.484 63.9999 183.984 44.9999 192.984 31.9999C202.984 18.9999 214.484 10.4999 227.484 6.4999C241.484 2.49995 253.984 0.499981 264.984 0.499981C271.984 0.499981 277.484 0.999974 281.484 1.99996C285.484 1.99996 289.484 2.49995 293.484 3.49994V45.4999C279.484 45.4999 269.984 49 264.984 56C260.984 62 258.984 70 258.984 79.9999V155H270.984C278.984 155 285.484 157.5 290.484 162.5C295.484 166.5 297.984 173.5 297.984 183.5V303.5C297.984 322.5 288.984 332 270.984 332H200.484Z" fill="#ED9B04" fill-opacity="0.05"/>
+        </svg>        
+      
+      <div class="author">
+        <img src="/Ressources/Benjamin.svg" alt="Benjamin picture">
+        <div class="info">
+          <span class="author-name">Benjamin Walter</span>
+          <span class="date">26/05/2022</span>
+        </div>
+      </div>
+
+      <div class="t-line">
+        <svg width="397" height="2" viewBox="0 0 397 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1L397 1.00003" stroke="url(#paint0_linear_73_331)"/>
+          <defs>
+          <linearGradient id="paint0_linear_73_331" x1="22.9205" y1="1" x2="402.19" y2="1.00004" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#ED9B04"/>
+          <stop offset="1" stop-color="#ED9B04" stop-opacity="0"/>
+          </linearGradient>
+          </defs>
+          </svg>     
+      </div>
+
+      <p class="t-text">Training with Emmy has been great! I see such an improvement in my strength and she makes the workouts fun!</p>
+    </div>
+  </div>
+
+ <div class="t-long">
+    <div class="t-card t-card3">
+      <svg class="quotes" width="298" height="332" viewBox="0 0 298 332" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.9844 332C13.9844 332 8.48438 329.5 5.48438 324.5C2.48438 318.5 0.98438 311.5 0.98438 303.5V88.9999C0.98438 63.9999 5.48438 44.9999 14.4844 31.9999C24.4844 18.9999 35.9844 10.4999 48.9844 6.4999C62.9844 2.49995 75.4844 0.499981 86.4844 0.499981C93.4844 0.499981 98.9844 0.999974 102.984 1.99996C106.984 1.99996 110.984 2.49995 114.984 3.49994V45.4999C100.984 45.4999 91.4844 49 86.4844 56C82.4844 62 80.4844 70 80.4844 79.9999V155H92.4844C100.484 155 106.984 157.5 111.984 162.5C116.984 166.5 119.484 173.5 119.484 183.5V303.5C119.484 322.5 110.484 332 92.4844 332H21.9844ZM200.484 332C192.484 332 186.984 329.5 183.984 324.5C180.984 318.5 179.484 311.5 179.484 303.5V88.9999C179.484 63.9999 183.984 44.9999 192.984 31.9999C202.984 18.9999 214.484 10.4999 227.484 6.4999C241.484 2.49995 253.984 0.499981 264.984 0.499981C271.984 0.499981 277.484 0.999974 281.484 1.99996C285.484 1.99996 289.484 2.49995 293.484 3.49994V45.4999C279.484 45.4999 269.984 49 264.984 56C260.984 62 258.984 70 258.984 79.9999V155H270.984C278.984 155 285.484 157.5 290.484 162.5C295.484 166.5 297.984 173.5 297.984 183.5V303.5C297.984 322.5 288.984 332 270.984 332H200.484Z" fill="#ED9B04" fill-opacity="0.05"/>
+        </svg>        
+      
+      <div class="author">
+        <img src="/Ressources/Victoria.svg" alt="Victoria picture">
+        <div class="info">
+          <span class="author-name">Victoria Teshome</span>
+          <span class="date">17/12/2021</span>
+        </div>
+      </div>
+
+      <div class="t-line">
+        <svg width="397" height="2" viewBox="0 0 397 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1L397 1.00003" stroke="url(#paint0_linear_73_331)"/>
+          <defs>
+          <linearGradient id="paint0_linear_73_331" x1="22.9205" y1="1" x2="402.19" y2="1.00004" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#ED9B04"/>
+          <stop offset="1" stop-color="#ED9B04" stop-opacity="0"/>
+          </linearGradient>
+          </defs>
+          </svg>     
+      </div>
+      <input type="radio" name="c" id="read-more1">
+      <p class="t-text t-text-suit">Highly recommend ! This has been my first personal training experience and I started about 8 months into my pregnancy. The exercises were well tailored to my fitness level and focused on building strength and resiliency for my upcoming labor. Even though I haven’t been training for long, my energy levels have increased and I feel all around in much better shape for this next chapter. I can’t wait to get back to training postpartum once I’ve been cleared by my doctor!</p>
+      <label class="read-more" for="read-more1">Read More</label>
+    </div>
+    
+
+    <div class="t-card t-card4">
+      <svg class="quotes" width="298" height="332" viewBox="0 0 298 332" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.9844 332C13.9844 332 8.48438 329.5 5.48438 324.5C2.48438 318.5 0.98438 311.5 0.98438 303.5V88.9999C0.98438 63.9999 5.48438 44.9999 14.4844 31.9999C24.4844 18.9999 35.9844 10.4999 48.9844 6.4999C62.9844 2.49995 75.4844 0.499981 86.4844 0.499981C93.4844 0.499981 98.9844 0.999974 102.984 1.99996C106.984 1.99996 110.984 2.49995 114.984 3.49994V45.4999C100.984 45.4999 91.4844 49 86.4844 56C82.4844 62 80.4844 70 80.4844 79.9999V155H92.4844C100.484 155 106.984 157.5 111.984 162.5C116.984 166.5 119.484 173.5 119.484 183.5V303.5C119.484 322.5 110.484 332 92.4844 332H21.9844ZM200.484 332C192.484 332 186.984 329.5 183.984 324.5C180.984 318.5 179.484 311.5 179.484 303.5V88.9999C179.484 63.9999 183.984 44.9999 192.984 31.9999C202.984 18.9999 214.484 10.4999 227.484 6.4999C241.484 2.49995 253.984 0.499981 264.984 0.499981C271.984 0.499981 277.484 0.999974 281.484 1.99996C285.484 1.99996 289.484 2.49995 293.484 3.49994V45.4999C279.484 45.4999 269.984 49 264.984 56C260.984 62 258.984 70 258.984 79.9999V155H270.984C278.984 155 285.484 157.5 290.484 162.5C295.484 166.5 297.984 173.5 297.984 183.5V303.5C297.984 322.5 288.984 332 270.984 332H200.484Z" fill="#ED9B04" fill-opacity="0.05"/>
+        </svg>        
+      
+      <div class="author">
+        <img src="/Ressources/Jamie.svg" alt="Jamie picture">
+        <div class="info">
+          <span class="author-name">Jamie Stone</span>
+          <span class="date">09/11/2021</span>
+        </div>
+      </div>
+
+      <div class="t-line">
+        <svg width="397" height="2" viewBox="0 0 397 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1L397 1.00003" stroke="url(#paint0_linear_73_331)"/>
+          <defs>
+          <linearGradient id="paint0_linear_73_331" x1="22.9205" y1="1" x2="402.19" y2="1.00004" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#ED9B04"/>
+          <stop offset="1" stop-color="#ED9B04" stop-opacity="0"/>
+          </linearGradient>
+          </defs>
+          </svg>     
+      </div>
+      <input type="radio" name="c" id="read-more2">
+      <p class="t-text t-text-suit">Committed, compassionate and an effective communicator- these are just some of the qualities Kern has exhibited throughout our journey together and exactly why I chose him as my coach. With his proactive nature he meets me right where I need him to every time. I can fail on myself time and time again, but he never does. He’s there to remind me of my goals and efforts to refocus my energy and get me through my physical and mental hurdles. More than a coach, he’s a true friend.</p>
+      <label class="read-more" for="read-more2">Read More</label>
+    </div>
+  </div>
+
+
+  </div>
+</section>
+
+<section class="contact-me" id="contact">
+  <h1>Contact Me</h1>
+  <div class="contact-container">
+
+    <form class="contact-form" action="https://formsubmit.co/haraldvob@gmail.com" method="POST">
+      <div class="field name">
+      <input type="text" name="name" id="name" required>
+      <label class="lb-name" for="name">Full Name:</label>
+    </div>
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank.html">
+    <div class="field email">
+      <input type="email" name="email" id="email" required>
+      <label class="lb-email" for="email">Email Address:</label>
+    </div>
+
+    <div class="field message">
+      <textarea type="text" name="message" id="message" required></textarea>
+      <label class="lb-message" for="message">Your Message:</label>
+    </div>
+    <input type="hidden" name="_captcha" value="false">
+    <button class="btn sec-btn submit" type="submit">Send Message</button>
+ </form>
+  
+ <div class="contact-pic"></div>
+
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="made-info">
+    <div class="title">
+    <svg class="logo" viewBox="0 0 184 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M135.6 30.44L134.84 41.4C134.813 41.6133 134.787 41.7733 134.76 41.88C134.76 41.96 134.64 42 134.4 42H132.2C130.707 42 129.64 41.7067 129 41.12C128.36 40.5333 128.04 39.6933 128.04 38.6C128.04 38.0667 128.08 37.16 128.16 35.88C128.24 34.5733 128.347 33.0933 128.48 31.44C128.613 29.7867 128.747 28.04 128.88 26.2C129.013 24.36 129.147 22.6267 129.28 21C129.413 19.3733 129.52 17.9467 129.6 16.72C129.68 15.4933 129.72 14.6533 129.72 14.2C129.72 13.8 129.933 13.6 130.36 13.6H144.44C144.6 13.6 144.747 13.64 144.88 13.72C145.013 13.8 145.08 13.9467 145.08 14.16L144.92 16.52C144.867 17.32 144.64 17.9733 144.24 18.48C143.867 18.96 143.08 19.2 141.88 19.2H136.36L135.96 24.84H141.64C141.8 24.84 141.947 24.88 142.08 24.96C142.213 25.04 142.28 25.1867 142.28 25.4L142.12 27.76C142.067 28.56 141.84 29.2133 141.44 29.72C141.067 30.2 140.28 30.44 139.08 30.44H135.6ZM150.755 42C149.261 42 148.195 41.7067 147.555 41.12C146.915 40.5333 146.595 39.6933 146.595 38.6C146.595 38.0667 146.635 37.16 146.715 35.88C146.795 34.5733 146.901 33.0933 147.035 31.44C147.168 29.7867 147.301 28.04 147.435 26.2C147.568 24.36 147.701 22.6267 147.835 21C147.968 19.3733 148.075 17.9467 148.155 16.72C148.235 15.4933 148.275 14.6533 148.275 14.2C148.275 13.8 148.488 13.6 148.915 13.6H151.115C152.741 13.6 153.835 13.9467 154.395 14.64C154.955 15.3333 155.235 16.36 155.235 17.72C155.235 17.8533 155.208 18.28 155.155 19C155.128 19.72 155.075 20.6267 154.995 21.72C154.915 22.8133 154.821 24.04 154.715 25.4C154.635 26.7333 154.541 28.1067 154.435 29.52C154.355 30.9333 154.261 32.32 154.155 33.68C154.075 35.0133 153.995 36.2267 153.915 37.32C153.835 38.4133 153.768 39.3333 153.715 40.08C153.661 40.8 153.621 41.24 153.595 41.4C153.568 41.6133 153.515 41.7733 153.435 41.88C153.355 41.96 153.195 42 152.955 42H150.755ZM172.133 19.2L170.613 41.4C170.586 41.8 170.44 42 170.173 42H167.973C166.48 42 165.413 41.7067 164.773 41.12C164.133 40.5333 163.813 39.6933 163.813 38.6C163.813 38.2 163.826 37.6 163.853 36.8C163.906 36 163.973 35.0667 164.053 34C164.133 32.9067 164.213 31.7333 164.293 30.48C164.4 29.2 164.506 27.92 164.613 26.64C164.72 25.3333 164.813 24.04 164.893 22.76C165 21.48 165.093 20.2933 165.173 19.2H158.773C158.48 19.2 158.333 19.0133 158.333 18.64L158.453 16.4C158.48 16.0533 158.533 15.72 158.613 15.4C158.72 15.0533 158.88 14.7467 159.093 14.48C159.306 14.2133 159.573 14 159.893 13.84C160.24 13.68 160.653 13.6 161.133 13.6H179.013C179.173 13.6 179.32 13.64 179.453 13.72C179.586 13.8 179.653 13.9467 179.653 14.16L179.493 16.52C179.44 17.32 179.213 17.9733 178.813 18.48C178.44 18.96 177.653 19.2 176.453 19.2H172.133Z" fill="#E39300"/>
+      <path d="M19.942 19.77V26.42H28.872V30.638H19.942V37.668H30.012V42H14.622V15.438H30.012V19.77H19.942ZM63.7646 15.476V42H58.4446V24.748L51.3386 42H47.3106L40.1666 24.748V42H34.8466V15.476H40.8886L49.3246 35.198L57.7606 15.476H63.7646ZM97.9423 15.476V42H92.6223V24.748L85.5163 42H81.4883L74.3443 24.748V42H69.0243V15.476H75.0663L83.5023 35.198L91.9383 15.476H97.9423ZM119.466 36.946H108.902L107.154 42H101.568L111.106 15.438H117.3L126.838 42H121.214L119.466 36.946ZM118.022 32.69L114.184 21.594L110.346 32.69H118.022Z" fill="#5B5240"/>
+      <path d="M182.987 29.8088C128.087 47.3743 14.8771 71.6042 1.23883 28" stroke="#ED9B04" stroke-width="2"/>
+      </svg>
+    </div>
+      <div class="txt-footer">
+        <div class="svg-txt">
+          <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_48_1291)">
+            <path d="M17 9.06992C17 11.3591 16.1045 13.5546 14.5104 15.1733C12.9163 16.792 10.7543 17.7014 8.5 17.7014C6.24566 17.7014 4.08365 16.792 2.48959 15.1733C0.895533 13.5546 0 11.3591 0 9.06992C0 6.78072 0.895533 4.58528 2.48959 2.96657C4.08365 1.34786 6.24566 0.438477 8.5 0.438477C10.7543 0.438477 12.9163 1.34786 14.5104 2.96657C16.1045 4.58528 17 6.78072 17 9.06992ZM8.65512 5.8245C9.67619 5.8245 10.3987 6.50746 10.4922 7.45584H11.8681V7.36089C11.7683 5.72308 10.4359 4.58589 8.64875 4.58589C6.4515 4.58589 5.17544 6.07157 5.17544 8.51103V9.66873C5.17544 12.1147 6.42706 13.5561 8.64981 13.5561C10.4295 13.5561 11.7629 12.4556 11.8681 10.8944V10.7941H10.4922C10.3987 11.6917 9.69531 12.324 8.65512 12.324C7.35462 12.324 6.60769 11.3626 6.60769 9.66873V8.52506C6.60769 6.81711 7.36737 5.8245 8.65512 5.8245Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_48_1291">
+            <rect width="17" height="17.2629" fill="white" transform="translate(0 0.438477)"/>
+            </clipPath>
+            </defs>
+            </svg>
+
+            <p class="f-txt">Copyright 2022, All Rights Reserved</p>
+          </div>
+
+            <span class="f-txt-black">Website made By <span class="f-txt-orange"><a href="#">@Othmane-Space</a></span></span>
+      </div>
+  </div>
+
+  <div class="services-footer">
+    
+    <div class="title">
+      <span class="f-txt big">SERVICES</span>
+    </div>
+
+    <div class="s-f-c">
+    <a class="f-txt s-link" href="#services">One To One Coaching</a>
+    <a class="f-txt s-link" href="#services">Online Coaching</a>
+  </div>
+  </div>
+
+  
+  <div class="follow-footer">
+    
+    <div class="title">
+      <span class="f-txt big">FOLLOW ME ON</span>
+    </div>
+
+<div class="social-media">
+    <a href="https://www.facebook.com/"><div class="svg-txt facebook">
+      <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_48_1357)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.11811C0 13.4094 3.06921 16.9778 7.08333 17.7014V11.4673H4.95833V9.06992H7.08333V7.15158C7.08333 4.99372 8.45254 3.79539 10.3891 3.79539C11.0025 3.79539 11.6641 3.89105 12.2775 3.98672V6.19277H11.1917C10.1525 6.19277 9.91667 6.72001 9.91667 7.39182V9.06992H12.1833L11.8058 11.4673H9.91667V17.7014C13.9308 16.9778 17 13.4101 17 9.11811C17 4.34421 13.175 0.438477 8.5 0.438477C3.825 0.438477 0 4.34421 0 9.11811Z" fill="black"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_48_1357">
+        <rect width="17" height="17.2629" fill="white" transform="translate(0 0.438477)"/>
+        </clipPath>
+        </defs>
+        </svg>        
+        
+        <p class="f-txt">Facebook</p>
+      </div></a>
+
+      
+    <a href="https://www.twitter.com/" target="_blank"><div class="svg-txt twitter">
+      <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.5 1.51758C4.39277 1.51758 1.0625 4.89935 1.0625 9.07009C1.0625 13.2408 4.39277 16.6226 8.5 16.6226C12.6072 16.6226 15.9375 13.2408 15.9375 9.07009C15.9375 4.89935 12.6072 1.51758 8.5 1.51758ZM12.0743 7.21062C12.0793 7.28986 12.0793 7.37246 12.0793 7.45338C12.0793 9.92818 10.2232 12.7789 6.83154 12.7789C5.78564 12.7789 4.81611 12.4704 3.99932 11.9394C4.14873 11.9562 4.2915 11.963 4.44424 11.963C5.30752 11.963 6.10107 11.6663 6.73359 11.1639C5.92344 11.147 5.24277 10.6076 5.01035 9.8658C5.29424 9.90795 5.5499 9.90795 5.84209 9.83209C5.42494 9.74603 5.04999 9.51596 4.78095 9.18099C4.5119 8.84602 4.36536 8.42679 4.36621 7.99453V7.97093C4.61025 8.11085 4.89746 8.19683 5.19795 8.20863C4.94534 8.03768 4.73818 7.80608 4.59483 7.53435C4.45148 7.26263 4.37638 6.95918 4.37617 6.65093C4.37617 6.30196 4.46582 5.98334 4.62686 5.70686C5.08988 6.28567 5.66766 6.75906 6.32265 7.09627C6.97763 7.43347 7.69517 7.62694 8.42861 7.66411C8.16797 6.39131 9.1043 5.36127 10.2299 5.36127C10.7611 5.36127 11.2393 5.58717 11.5763 5.95131C11.993 5.87207 12.3914 5.71361 12.7467 5.50119C12.6089 5.93445 12.32 6.30027 11.9365 6.53123C12.3084 6.49077 12.667 6.38625 12.999 6.23958C12.7483 6.61384 12.4346 6.94595 12.0743 7.21062Z" fill="black"/>
+        </svg>
+             
+        
+        <p class="f-txt">Twitter</p>
+      </div></a>
+
+          <a href="https://www.instagram.com/" target="_blank"><div class="svg-txt Instagram">
+            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_48_1361)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.28772 0.808215C6.11859 0.769374 6.38351 0.760742 8.50001 0.760742C10.6165 0.760742 10.8814 0.770093 11.7116 0.808215C12.5418 0.846337 13.1084 0.980844 13.6043 1.17577C14.1235 1.37501 14.5945 1.68646 14.9841 2.08927C15.3808 2.48415 15.6868 2.96176 15.8823 3.48972C16.0749 3.99322 16.2067 4.56865 16.2449 5.41021C16.2832 6.25538 16.2917 6.52439 16.2917 8.6729C16.2917 10.8221 16.2825 11.0911 16.2449 11.9349C16.2074 12.7764 16.0749 13.3519 15.8823 13.8554C15.6868 14.3834 15.3802 14.8618 14.9841 15.2573C14.5945 15.6601 14.1235 15.9708 13.6043 16.1693C13.1084 16.365 12.5418 16.4987 11.713 16.5376C10.8814 16.5764 10.6165 16.5851 8.50001 16.5851C6.38351 16.5851 6.11859 16.5757 5.28772 16.5376C4.45897 16.4995 3.8923 16.365 3.39647 16.1693C2.8765 15.9708 2.40538 15.6595 2.01593 15.2573C1.61953 14.8621 1.31277 14.384 1.11705 13.8561C0.925093 13.3526 0.793343 12.7771 0.755093 11.9356C0.716843 11.0904 0.708344 10.8214 0.708344 8.6729C0.708344 6.52367 0.717552 6.25466 0.755093 5.41165C0.792635 4.56865 0.925093 3.99322 1.11705 3.48972C1.31306 2.96182 1.62005 2.48366 2.01663 2.08855C2.40554 1.68611 2.87618 1.37461 3.39576 1.17577C3.89159 0.980844 4.45826 0.847057 5.28701 0.808215H5.28772ZM11.6486 2.2324C10.8269 2.19428 10.5804 2.18637 8.50001 2.18637C6.41963 2.18637 6.17313 2.19428 5.35147 2.2324C4.59143 2.26765 4.17918 2.3964 3.90434 2.50501C3.54097 2.64887 3.28101 2.81934 3.0083 3.09627C2.74979 3.35165 2.55085 3.66255 2.42605 4.00616C2.31909 4.28525 2.1923 4.70387 2.15759 5.47567C2.12005 6.31004 2.11226 6.56035 2.11226 8.6729C2.11226 10.7854 2.12005 11.0358 2.15759 11.8701C2.1923 12.6419 2.31909 13.0605 2.42605 13.3396C2.55072 13.6827 2.74976 13.9942 3.0083 14.2495C3.25976 14.5121 3.56647 14.7142 3.90434 14.8408C4.17918 14.9494 4.59143 15.0781 5.35147 15.1134C6.17313 15.1515 6.41893 15.1594 8.50001 15.1594C10.5811 15.1594 10.8269 15.1515 11.6486 15.1134C12.4086 15.0781 12.8208 14.9494 13.0957 14.8408C13.4591 14.6969 13.719 14.5265 13.9917 14.2495C14.2503 13.9942 14.4493 13.6827 14.574 13.3396C14.6809 13.0605 14.8077 12.6419 14.8424 11.8701C14.88 11.0358 14.8878 10.7854 14.8878 8.6729C14.8878 6.56035 14.88 6.31004 14.8424 5.47567C14.8077 4.70387 14.6809 4.28525 14.574 4.00616C14.4323 3.63717 14.2644 3.37319 13.9917 3.09627C13.7402 2.83378 13.434 2.63176 13.0957 2.50501C12.8208 2.3964 12.4086 2.26765 11.6486 2.2324V2.2324ZM7.5048 11.112C8.0606 11.3469 8.67949 11.3787 9.25575 11.2017C9.83202 11.0248 10.3299 10.6502 10.6644 10.1419C10.9989 9.63356 11.1492 9.0231 11.0897 8.41475C11.0302 7.8064 10.7646 7.2379 10.3381 6.80635C10.0663 6.53049 9.73762 6.31926 9.37574 6.18787C9.01387 6.05648 8.62781 6.0082 8.24536 6.04651C7.86291 6.08481 7.49358 6.20875 7.16395 6.4094C6.83433 6.61004 6.55262 6.88241 6.3391 7.20688C6.12558 7.53136 5.98556 7.89987 5.92912 8.28589C5.87269 8.67191 5.90124 9.06584 6.01273 9.43931C6.12421 9.81278 6.31585 10.1565 6.57385 10.4457C6.83186 10.735 7.1498 10.9625 7.5048 11.112ZM5.66809 5.79719C6.03999 5.41955 6.48149 5.11998 6.96739 4.9156C7.45329 4.71122 7.97407 4.60603 8.50001 4.60603C9.02594 4.60603 9.54673 4.71122 10.0326 4.9156C10.5185 5.11998 10.96 5.41955 11.3319 5.79719C11.7038 6.17483 11.9988 6.62316 12.2001 7.11658C12.4014 7.60999 12.5049 8.13883 12.5049 8.6729C12.5049 9.20697 12.4014 9.73581 12.2001 10.2292C11.9988 10.7226 11.7038 11.171 11.3319 11.5486C10.5809 12.3113 9.56218 12.7398 8.50001 12.7398C7.43783 12.7398 6.41916 12.3113 5.66809 11.5486C4.91702 10.7859 4.49507 9.7515 4.49507 8.6729C4.49507 7.5943 4.91702 6.55987 5.66809 5.79719V5.79719ZM13.3932 5.21169C13.4853 5.12341 13.5591 5.01725 13.6101 4.8995C13.6612 4.78175 13.6884 4.6548 13.6903 4.52616C13.6921 4.39752 13.6685 4.26982 13.6209 4.1506C13.5733 4.03139 13.5026 3.92309 13.413 3.83213C13.3234 3.74116 13.2167 3.66936 13.0994 3.621C12.982 3.57263 12.8562 3.54868 12.7295 3.55056C12.6028 3.55243 12.4778 3.5801 12.3619 3.63192C12.2459 3.68374 12.1414 3.75865 12.0544 3.85224C11.8854 4.03424 11.7928 4.27598 11.7964 4.52616C11.8 4.77633 11.8994 5.01524 12.0737 5.19216C12.2479 5.36907 12.4832 5.47008 12.7295 5.47373C12.9759 5.47737 13.2139 5.38338 13.3932 5.21169V5.21169Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_48_1361">
+              <rect width="17" height="17.2629" fill="white" transform="translate(0 0.0415039)"/>
+              </clipPath>
+              </defs>
+              </svg>
+              
+        <p class="f-txt">Instagram</p>
+      </div></a>
+
+      <a href="https://www.linkedin.com/" target="_blank"><div class="svg-txt linkedin">
+        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_48_1369)">
+          <path d="M8.50003 0.386719C3.99333 0.386719 0.340027 4.09651 0.340027 8.67291C0.340027 13.2493 3.99333 16.9591 8.50003 16.9591C13.0067 16.9591 16.66 13.2493 16.66 8.67291C16.66 4.09651 13.0067 0.386719 8.50003 0.386719ZM6.50253 12.1074H4.85013V6.70753H6.50253V12.1074ZM5.66613 6.04463C5.14423 6.04463 4.80678 5.66916 4.80678 5.20479C4.80678 4.73092 5.15443 4.36668 5.68738 4.36668C6.22033 4.36668 6.54673 4.73092 6.55693 5.20479C6.55693 5.66916 6.22033 6.04463 5.66613 6.04463ZM12.5375 12.1074H10.8851V9.11484C10.8851 8.41828 10.6454 7.94527 10.0479 7.94527C9.59143 7.94527 9.32028 8.2655 9.20043 8.57364C9.15623 8.68326 9.14518 8.83863 9.14518 8.99313V12.1065H7.49193V8.4295C7.49193 7.75538 7.47068 7.19175 7.44858 6.70666H8.88423L8.95988 7.45674H8.99303C9.21063 7.10457 9.74358 6.58496 10.6352 6.58496C11.7224 6.58496 12.5375 7.32467 12.5375 8.91459V12.1074Z" fill="black"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_48_1369">
+          <rect width="17" height="17.2629" fill="white" transform="translate(0 0.0415039)"/>
+          </clipPath>
+          </defs>
+          </svg>
+          
+    <p class="f-txt">Linkedin</p>
+  </div></a>
+
+  <a href="https://www.youtube.com/" target="_blank"><div class="svg-txt youtube">
+    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_48_1373)">
+      <path d="M8.5 0.644043C3.808 0.644043 0 4.51093 0 9.27549C0 14.04 3.808 17.9069 8.5 17.9069C13.192 17.9069 17 14.04 17 9.27549C17 4.51093 13.192 0.644043 8.5 0.644043ZM8.5 14.3853C5.7205 14.3853 3.468 12.098 3.468 9.27549C3.468 6.453 5.7205 4.16567 8.5 4.16567C11.2795 4.16567 13.532 6.453 13.532 9.27549C13.532 12.098 11.2795 14.3853 8.5 14.3853ZM8.5 4.79577C6.069 4.79577 4.0885 6.80689 4.0885 9.27549C4.0885 11.7441 6.069 13.7552 8.5 13.7552C10.931 13.7552 12.9115 11.7441 12.9115 9.27549C12.9115 6.80689 10.931 4.79577 8.5 4.79577ZM6.8595 11.8218V6.72921L11.203 9.27549L6.8595 11.8218Z" fill="black"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_48_1373">
+      <rect width="17" height="17.2629" fill="white" transform="translate(0 0.644043)"/>
+      </clipPath>
+      </defs>
+      </svg>      
+      
+<p class="f-txt">Youtube</p>
+</div></a>
+</div>
+  </div>
+  <div class="bottom">
+    <a href="#">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C30.125 1.66675 38.3333 9.87508 38.3333 20.0001C38.3333 30.1251 30.125 38.3334 20 38.3334C9.87498 38.3334 1.66665 30.1251 1.66665 20.0001C1.66665 9.87508 9.87498 1.66675 20 1.66675ZM16.3216 14.5117C16.018 14.1974 15.8501 13.7764 15.8539 13.3394C15.8577 12.9024 16.0329 12.4844 16.3419 12.1754C16.651 11.8664 17.069 11.6911 17.506 11.6873C17.943 11.6835 18.364 11.8515 18.6783 12.1551L25.345 18.8217C25.6574 19.1343 25.833 19.5581 25.833 20.0001C25.833 20.442 25.6574 20.8659 25.345 21.1784L18.6783 27.8451C18.364 28.1487 17.943 28.3167 17.506 28.3129C17.069 28.3091 16.651 28.1338 16.3419 27.8248C16.0329 27.5158 15.8577 27.0977 15.8539 26.6608C15.8501 26.2238 16.018 25.8028 16.3216 25.4884L21.81 20.0001L16.3216 14.5117Z" fill="#ED9B04"/>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+<div class="top">
+  <a href="#contact">
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C30.125 1.66675 38.3333 9.87508 38.3333 20.0001C38.3333 30.1251 30.125 38.3334 20 38.3334C9.87498 38.3334 1.66665 30.1251 1.66665 20.0001C1.66665 9.87508 9.87498 1.66675 20 1.66675ZM16.3216 14.5117C16.018 14.1974 15.8501 13.7764 15.8539 13.3394C15.8577 12.9024 16.0329 12.4844 16.3419 12.1754C16.651 11.8664 17.069 11.6911 17.506 11.6873C17.943 11.6835 18.364 11.8515 18.6783 12.1551L25.345 18.8217C25.6574 19.1343 25.833 19.5581 25.833 20.0001C25.833 20.442 25.6574 20.8659 25.345 21.1784L18.6783 27.8451C18.364 28.1487 17.943 28.3167 17.506 28.3129C17.069 28.3091 16.651 28.1338 16.3419 27.8248C16.0329 27.5158 15.8577 27.0977 15.8539 26.6608C15.8501 26.2238 16.018 25.8028 16.3216 25.4884L21.81 20.0001L16.3216 14.5117Z" fill="#ED9B04"/>
+    </svg></a>
+</div>
+
+</body>
+</html>
