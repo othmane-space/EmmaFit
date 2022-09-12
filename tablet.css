@@ -15,7 +15,7 @@
  top: 0;
  bottom: 0;
  background-color: white;
- width: 250px;
+ width: 300px;
  display: flex;
  flex-direction: column;
  padding: 69px;
@@ -299,13 +299,7 @@ margin-top: -20%;
  }
  }
  @media (max-width:600px){
-   *{
-  --padding-lr:0 2rem;
-  --margin-btwn-sections:5rem;
- }
-  .btn{
-   font-size:1rem;
-  }
+
   .contact-form{
    width: 100%;
   }
@@ -320,9 +314,29 @@ margin-top: -20%;
  background-position-y:0px ;
    }
    .carda{
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
    }
    .small{
     display: none;
+   }
+ }
+ @media (max-width:500px) {
+  *{
+    --padding-lr:0 .5rem;
+    --padding-btn:0rem .75rem;
+    --subheadline:1.25rem;
+   }
+   .carda{
+    padding: 1rem .5rem;
+   }
+   .btn{
+    font-size: 1rem;
+   }
+   .all-slider-container{
+    padding:0 1rem;
+   }
+   .left,.right{
+    width: 30px;
+    z-index: 4;
    }
  }
