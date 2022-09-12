@@ -165,7 +165,7 @@ background-color: var(--primary-color);
  position: relative;
  display: flex;
  flex-direction: column;
- padding:12.5rem 2rem 6.25rem 2rem;
+ padding:10rem 2rem 5rem 2rem;
  box-shadow: var(--box-shadow);
  height: 100%;
 }
@@ -754,7 +754,7 @@ height: 250px;
  background-color: white;
 }
 .contact-form label{
- font-size: 1.5rem;
+ font-size: 1.25rem;
  color: var(--regular-txt-color);
  font-weight: 500;
 }
@@ -767,7 +767,7 @@ height: 250px;
 .contact-form input,.contact-form textarea{
  order: 1;
  padding: .5rem;
- font-size: 1.25rem;
+ font-size: 1rem;
  background-color: #F8F8F8;
  outline: none;
  border: none;
