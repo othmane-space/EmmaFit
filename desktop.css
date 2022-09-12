@@ -352,8 +352,10 @@ position: relative;
  height: 40px;
 }
 .client-progress{
- padding: var(--padding-lr);
  margin-top: var(--margin-btwn-sections);
+}
+.client-progress h1{
+ padding: var(--padding-lr);
 }
 .client-progress input{
  display: none;
