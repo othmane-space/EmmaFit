@@ -308,6 +308,9 @@
   padding-right: .5rem;
   padding-bottom: .5rem;
  }
+  .bottom{
+    right: .5rem;
+ }
    .contact-form{
     width: 100%;
    }
