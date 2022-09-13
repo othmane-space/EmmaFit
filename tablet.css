@@ -332,6 +332,12 @@
     .carda{
      padding: 1rem .8rem;
     }
+    
+     .subheadline{
+   margin-bottom: 1.5rem;
+   line-height:1.5rem
+    }
+    
     .btn{
      font-size: 1rem;
     }
