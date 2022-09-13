@@ -888,7 +888,7 @@ body,p,h1,h2,h3,li,ul{
   position: absolute;
   top: 0;
   right: 0;
-  top: 90vh;
+  top: 80vh;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
