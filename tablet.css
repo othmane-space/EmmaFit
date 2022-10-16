@@ -362,3 +362,13 @@
      padding: 3rem 1rem;
     }
   }
+    @media (min-width:1700px) {
+      html{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+     body{
+      max-width: 1600px;
+     }
+    }
